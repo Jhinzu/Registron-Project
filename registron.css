@@ -3,18 +3,34 @@ body {
   background-position: 99% 50%;
 }
 
+h1 {
+  text-align: center;
+}
+
 .containerResistance {
   display: flex;
   align-items: center;
   flex-flow: column;
+  gap: 20px;
 }
 .containerResistance .resistance {
   border: 3px black solid;
+  background-color: #ffd900;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 10px;
   height: 100px;
-  width: 30%;
+  width: 40%;
 }
 .containerResistance .containerPanel {
   display: flex;
   flex-flow: row;
-  width: 30%;
+  width: 40%;
+  justify-content: space-around;
+}
+.containerResistance .containerPanel .selectionC1, .containerResistance .containerPanel .selectionC2, .containerResistance .containerPanel .selectionC3, .containerResistance .containerPanel .selectionC4 {
+  background-color: black;
+  border: 2px black solid;
+  border-radius: 7px;
+  color: white;
+  height: 40px;
 }/*# sourceMappingURL=registron.css.map */
