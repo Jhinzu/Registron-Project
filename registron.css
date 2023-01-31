@@ -1,3 +1,14 @@
-p {
-  color: green;
+body {
+  background-image: url(images//background.jpg);
+  background-position: 99% 50%;
+}
+
+.containerResistance {
+  display: flex;
+  justify-content: center;
+}
+.containerResistance .resistance {
+  border: 3px black solid;
+  height: 100px;
+  width: 30%;
 }/*# sourceMappingURL=registron.css.map */
