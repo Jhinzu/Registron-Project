@@ -3,7 +3,7 @@
  
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px;
-    background-color: aliceblue;
+    background-color: white;
     border: 3px black solid;
 
     min-width: 300px;
@@ -11,14 +11,17 @@
 
     .anneau1{
         background-color: red;
+        border-right: solid 2px black;
     }
 
     .anneau2{
         background-color: green;
+        border-right: solid 2px black;
     }
 
     .anneau3{
         background-color: violet;
+        border-right: solid 2px black;
     }
 
     .anneau4{
