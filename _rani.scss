@@ -1,0 +1,29 @@
+.resistance{
+    display: grid;
+ 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px;
+    background-color: aliceblue;
+    border: 3px black solid;
+
+    min-width: 300px;
+    
+
+    .anneau1{
+        background-color: red;
+    }
+
+    .anneau2{
+        background-color: green;
+    }
+
+    .anneau3{
+        background-color: violet;
+    }
+
+    .anneau4{
+        background-color: black;
+    }
+    
+
+}

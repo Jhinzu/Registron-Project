@@ -8,13 +8,29 @@ body {
   align-items: center;
   flex-flow: column;
 }
-.containerResistance .resistance {
-  border: 3px black solid;
-  height: 100px;
-  width: 30%;
-}
 .containerResistance .containerPanel {
   display: flex;
   flex-flow: row;
   width: 30%;
+}
+
+.resistance {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px;
+  background-color: aliceblue;
+  border: 3px black solid;
+  min-width: 300px;
+}
+.resistance .anneau1 {
+  background-color: red;
+}
+.resistance .anneau2 {
+  background-color: green;
+}
+.resistance .anneau3 {
+  background-color: violet;
+}
+.resistance .anneau4 {
+  background-color: black;
 }/*# sourceMappingURL=registron.css.map */
