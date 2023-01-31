@@ -11,15 +11,12 @@ h1 {
   display: flex;
   align-items: center;
   flex-flow: column;
-  gap: 20px;
 }
 .containerResistance .resistance {
+  gap: 20px;
   border: 3px black solid;
-  background-color: #ffd900;
-  box-shadow: 10px 5px 5px black;
-  border-radius: 10px;
   height: 100px;
-  width: 40%;
+  width: 30%;
 }
 .containerResistance .containerPanel {
   display: flex;
@@ -33,4 +30,28 @@ h1 {
   border-radius: 7px;
   color: white;
   height: 40px;
+}
+
+.resistance {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px;
+  background-color: white;
+  border: 3px black solid;
+  min-width: 300px;
+}
+.resistance .anneau1 {
+  background-color: red;
+  border-right: solid 2px black;
+}
+.resistance .anneau2 {
+  background-color: green;
+  border-right: solid 2px black;
+}
+.resistance .anneau3 {
+  background-color: violet;
+  border-right: solid 2px black;
+}
+.resistance .anneau4 {
+  background-color: black;
 }/*# sourceMappingURL=registron.css.map */
