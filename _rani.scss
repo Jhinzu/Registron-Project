@@ -1,11 +1,9 @@
 .resistance{
     display: grid;
- 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px;
     background-color: white;
     border: 3px black solid;
-
     min-width: 300px;
     
 

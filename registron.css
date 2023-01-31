@@ -13,12 +13,6 @@ h1 {
   flex-flow: column;
   gap: 20px;
 }
-.containerResistance .resistance {
-  gap: 20px;
-  border: 3px black solid;
-  height: 100px;
-  width: 40%;
-}
 .containerResistance .containerPanel {
   display: flex;
   flex-flow: row;
