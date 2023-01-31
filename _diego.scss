@@ -13,12 +13,13 @@ h1
     display: flex;
     align-items: center;
     flex-flow: column;
+    gap: 20px;
     .resistance
     {
         gap:20px;
         border: 3px black solid;
         height: 100px;
-        width: 30%;
+        width: 40%;
     }
     .containerPanel
     {
