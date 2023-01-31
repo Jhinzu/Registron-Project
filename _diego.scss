@@ -13,15 +13,12 @@ h1
     display: flex;
     align-items: center;
     flex-flow: column;
-    gap: 20px;
     .resistance
     {
+        gap:20px;
         border: 3px black solid;
-        background-color:#ffd900;
-        box-shadow: 10px 5px 5px black;
-        border-radius: 10px;
         height: 100px;
-        width: 40%;
+        width: 30%;
     }
     .containerPanel
     {
