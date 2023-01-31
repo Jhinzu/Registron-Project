@@ -5,10 +5,16 @@ body {
 
 .containerResistance {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 .containerResistance .resistance {
   border: 3px black solid;
   height: 100px;
+  width: 30%;
+}
+.containerResistance .containerPanel {
+  display: flex;
+  flex-flow: row;
   width: 30%;
 }/*# sourceMappingURL=registron.css.map */

@@ -7,11 +7,18 @@ body
 .containerResistance
 {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-flow: column;
     .resistance
     {
         border: 3px black solid;
         height: 100px;
+        width: 30%;
+    }
+    .containerPanel
+    {
+        display: flex;
+        flex-flow: row;
         width: 30%;
     }
 
