@@ -1,9 +1,4 @@
 <?php
-isset($c1);
-isset($c2);
-isset($c3);
-isset($c4);
-
 $c1 = $_GET["couleurs1"];
 $c2 = $_GET["couleurs2"];
 $c3 = $_GET["couleurs3"];
@@ -112,82 +107,82 @@ $c4 = $_GET["couleurs4"];
             if ($c1 == "Yellow")
             {
                 $c1 = 4;
-                echo "4";
+                
             }
             if ($c1 == "Green")
             {
                 $c1 = 5;
-                echo "5";
+                
             }
             if ($c1 == "Blue")
             {
                 $c1 = 6;
-                echo "6";
+                
             }
             if ($c1 == "Purple")
             {
                 $c1 = 7;
-                echo "7";
+                
             }
             if ($c1 == "Gray")
             {
                 $c1 = 8;
-                echo "8";
+                
             }
             if ($c1 == "White")
             {
                 $c1 = 9;
-                echo "9";
+                
             }
         // cercle 2
         if ($c2 == "Noir")
             {
                 $c2 = 0;
-                echo "0";
+                
             }
             if ($c2 == "Brun")
             {
                 $c2 = 1;
-                echo "1";
+                
             }
             if ($c2 == "Red")
             {
                 $c2 = 2;
-                echo "2";
+                
             }
             if ($c2 == "Orange")
             {
                 $c2 = 3;
-                echo "3";
+                
             }
             if ($c2 == "Yellow")
             {
                 $c2 = 4;
-                echo "4";
+                
             }
             if ($c2 == "Green")
             {
                 $c2 = 5;
-                echo "5";
+                
             }
             if ($c2 == "Blue")
             { $c2 = 6;
-                echo "6";
+                
             }
             if ($c2 == "Purple")
             {
                 $c2 = 7;
-                echo "7";
+                
             }
             if ($c2 == "Gray")
             {
                 $c2 = 8;
-                echo "8";
+                
             }
             if ($c2 == "White")
             {
                 $c2 = 9;
-                echo "9";
+                
             }
         // cercle 3
         if ($c3 == "Noir")
@@ -244,48 +239,47 @@ $c4 = $_GET["couleurs4"];
         
         if ($c4 == "Brun")
         {
-            $c4 = 1;
-           
+            $c4 = 0;
         }
 
         if ($c4 == "Red")
         {
-            $c4 = 2;
-        
+            $c4 = 1;
         }
     
         if ($c4 == "Green")
         {
-            $c4 = 0.5;
-          
+            $c4 = 2;
         }
         if ($c4 == "Blue")
         {
-            $c4 = 0.25;
-          
+            $c4 = 3;
         }
         if ($c4 == "Purple")
         {
-            $c4 = 0.10;
-          
+            $c4 = 4;
         }
         if ($c4 == "Gray")
         {
-            $c4 = 0.05;
-          
+            $c4 = 5;
         }
     
         if ($c4 == "Gold")
         {
-            $c4 = 5;
-           
+            $c4 = 6;
         }
         if ($c4 == "Silver")
         {
-            $c4 = 10;
-
+            $c4 = 7;
         }
+        // calcule de la multiplications
+        $resultM = ($c1.$c2) * $c3;
+        echo ($c1.$c2). " x " . $c3 . " " . "=" . $resultM
+        . "= " . $resultM . "Ω " . "±" . $c4 . "%"
+        //calcul du pourcentage
+
         ?>
     </form>
 </body>
 </html>
+
