@@ -8,12 +8,8 @@ $c1 = $_GET["couleurs1"];
 $c2 = $_GET["couleurs2"];
 $c3 = $_GET["couleurs3"];
 $c4 = $_GET["couleurs4"];
-echo $c1;
+
 ?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -96,163 +92,151 @@ echo $c1;
             if ($c1 == "Noir")
             {
                 $c1 = 0;
-               
+                
             }
             if ($c1 == "Brun")
             {
                 $c1 = 1;
-               
+                
             }
             if ($c1 == "Red")
             {
                 $c1 = 2;
-               
+                
             }
             if ($c1 == "Orange")
             {
                 $c1 = 3;
-               
+                
             }
             if ($c1 == "Yellow")
             {
                 $c1 = 4;
-               
+                echo "4";
             }
             if ($c1 == "Green")
             {
                 $c1 = 5;
-               
+                echo "5";
             }
             if ($c1 == "Blue")
             {
                 $c1 = 6;
-               
+                echo "6";
             }
             if ($c1 == "Purple")
             {
                 $c1 = 7;
-               
+                echo "7";
             }
             if ($c1 == "Gray")
             {
                 $c1 = 8;
-               
+                echo "8";
             }
             if ($c1 == "White")
             {
                 $c1 = 9;
-               
+                echo "9";
             }
         // cercle 2
         if ($c2 == "Noir")
             {
                 $c2 = 0;
-               
+                echo "0";
             }
             if ($c2 == "Brun")
             {
                 $c2 = 1;
-               
+                echo "1";
             }
             if ($c2 == "Red")
             {
                 $c2 = 2;
-               
+                echo "2";
             }
             if ($c2 == "Orange")
             {
                 $c2 = 3;
-               
+                echo "3";
             }
             if ($c2 == "Yellow")
             {
                 $c2 = 4;
-               
+                echo "4";
             }
             if ($c2 == "Green")
             {
                 $c2 = 5;
-               
+                echo "5";
             }
             if ($c2 == "Blue")
             { $c2 = 6;
-               
+                echo "6";
             }
             if ($c2 == "Purple")
             {
                 $c2 = 7;
-               
+                echo "7";
             }
             if ($c2 == "Gray")
             {
                 $c2 = 8;
-               
+                echo "8";
             }
             if ($c2 == "White")
             {
                 $c2 = 9;
-               
+                echo "9";
             }
         // cercle 3
         if ($c3 == "Noir")
             {
-                $c3 = 0;
-              
+                $c3 = 1;
             }
             if ($c3 == "Brun")
             {
-                $c3 = 1;
-               
+                $c3 = 10;
             }
             if ($c3 == "Red")
             {
-                $c3 = 3;
-              
+                $c3 = 100;
             }
             if ($c3 == "Orange")
             {
-                $c3 = 4;
-               
+                $c3 = 1000;
             }
             if ($c3 == "Yellow")
             {
-                $c3 = 5;
-               
+                $c3 = 10000;
             }
             if ($c3 == "Green")
             {
-                $c3 = 6;
-              
+                $c3 = 100000;
             }
             if ($c3 == "Blue")
             {
-                $c3 = 7;
-               
+                $c3 = 1000000;
             }
             if ($c3 == "Purple")
             {
-                $c3 = 8;
-              
+                $c3 = 10000000;
             }
             if ($c3 == "Gray")
             {
-                $c3 = 9;
-               
+                $c3 = 100000000;
             }
             if ($c3 == "White")
             {
-                $c3 = 10;
-            
+                $c3 = 1;
             }
             if ($c3 == "Gold")
             {
-                $c3 = 11;
-               
+                $c3 = 0.1;
             }
             if ($c3 == "Silver")
             {
-                $c3 = 12;
-        
+                $c3 = 0.01;
             }
 
 
@@ -261,50 +245,46 @@ echo $c1;
         if ($c4 == "Brun")
         {
             $c4 = 1;
-            echo "10Ω";
+           
         }
 
         if ($c4 == "Red")
         {
             $c4 = 2;
-           echo "100Ω";
+        
         }
-
     
         if ($c4 == "Green")
         {
             $c4 = 0.5;
-           echo "100kΩ";
+          
         }
         if ($c4 == "Blue")
         {
             $c4 = 0.25;
-           echo "1MΩ";
+          
         }
         if ($c4 == "Purple")
         {
             $c4 = 0.10;
-           echo "10MΩ";
+          
         }
         if ($c4 == "Gray")
         {
             $c4 = 0.05;
-           echo "100MΩ";
+          
         }
     
         if ($c4 == "Gold")
         {
             $c4 = 5;
-           echo "0.1Ω";
+           
         }
         if ($c4 == "Silver")
         {
             $c4 = 10;
-           echo "0.01Ω";
-        }
 
-        $resultM = ($c1.$c2)*$c3;
-       echo ($c1.$c2)*$c3 . "=" . $resultM;
+        }
         ?>
     </form>
 </body>
