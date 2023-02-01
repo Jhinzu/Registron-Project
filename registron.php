@@ -1,7 +1,13 @@
 <?php
+isset($c1);
+isset($c2);
+isset($c3);
+isset($c4);
+
 $c1 = $_GET["couleurs1"];
 $c2 = $_GET["couleurs2"];
 $c3 = $_GET["couleurs3"];
+$c4 = $_GET["couleurs4"];
 echo $c1;
 ?>
 
@@ -90,163 +96,163 @@ echo $c1;
             if ($c1 == "Noir")
             {
                 $c1 = 0;
-                echo "0";
+               
             }
             if ($c1 == "Brun")
             {
                 $c1 = 1;
-                echo "1";
+               
             }
             if ($c1 == "Red")
             {
                 $c1 = 2;
-                echo "2";
+               
             }
             if ($c1 == "Orange")
             {
                 $c1 = 3;
-                echo "3";
+               
             }
             if ($c1 == "Yellow")
             {
                 $c1 = 4;
-                echo "4";
+               
             }
             if ($c1 == "Green")
             {
                 $c1 = 5;
-                echo "5";
+               
             }
             if ($c1 == "Blue")
             {
                 $c1 = 6;
-                echo "6";
+               
             }
             if ($c1 == "Purple")
             {
                 $c1 = 7;
-                echo "7";
+               
             }
             if ($c1 == "Gray")
             {
                 $c1 = 8;
-                echo "8";
+               
             }
             if ($c1 == "White")
             {
                 $c1 = 9;
-                echo "9";
+               
             }
         // cercle 2
         if ($c2 == "Noir")
             {
                 $c2 = 0;
-                echo "0";
+               
             }
             if ($c2 == "Brun")
             {
                 $c2 = 1;
-                echo "1";
+               
             }
             if ($c2 == "Red")
             {
                 $c2 = 2;
-                echo "2";
+               
             }
             if ($c2 == "Orange")
             {
                 $c2 = 3;
-                echo "3";
+               
             }
             if ($c2 == "Yellow")
             {
                 $c2 = 4;
-                echo "4";
+               
             }
             if ($c2 == "Green")
             {
                 $c2 = 5;
-                echo "5";
+               
             }
             if ($c2 == "Blue")
             { $c2 = 6;
-                echo "6";
+               
             }
             if ($c2 == "Purple")
             {
                 $c2 = 7;
-                echo "7";
+               
             }
             if ($c2 == "Gray")
             {
                 $c2 = 8;
-                echo "8";
+               
             }
             if ($c2 == "White")
             {
                 $c2 = 9;
-                echo "9";
+               
             }
         // cercle 3
         if ($c3 == "Noir")
             {
                 $c3 = 0;
-                echo " x 1Ω";
+              
             }
             if ($c3 == "Brun")
             {
                 $c3 = 1;
-                echo " x 10Ω";
+               
             }
             if ($c3 == "Red")
             {
                 $c3 = 3;
-                echo " x 100Ω";
+              
             }
             if ($c3 == "Orange")
             {
                 $c3 = 4;
-                echo " x 1kΩ";
+               
             }
             if ($c3 == "Yellow")
             {
                 $c3 = 5;
-                echo " x 10kΩ";
+               
             }
             if ($c3 == "Green")
             {
                 $c3 = 6;
-                echo " x 100kΩ";
+              
             }
             if ($c3 == "Blue")
             {
                 $c3 = 7;
-                echo " x 1MΩ";
+               
             }
             if ($c3 == "Purple")
             {
                 $c3 = 8;
-                echo " x 10MΩ";
+              
             }
             if ($c3 == "Gray")
             {
                 $c3 = 9;
-                echo " x 100MΩ";
+               
             }
             if ($c3 == "White")
             {
                 $c3 = 10;
-                echo " x 1GΩ";
+            
             }
             if ($c3 == "Gold")
             {
                 $c3 = 11;
-                echo " x 0.1Ω";
+               
             }
             if ($c3 == "Silver")
             {
                 $c3 = 12;
-                echo " x 0.01Ω";
+        
             }
 
 
@@ -254,62 +260,52 @@ echo $c1;
         
         if ($c4 == "Brun")
         {
-            $c4 = 0;
-            echo " x 10Ω";
+            $c4 = 1;
+            echo "10Ω";
         }
 
         if ($c4 == "Red")
         {
-            $c4 = 1;
-            echo " x 100Ω";
+            $c4 = 2;
+           echo "100Ω";
         }
 
     
         if ($c4 == "Green")
         {
-            $c4 = 2;
-            echo " x 100kΩ";
+            $c4 = 0.5;
+           echo "100kΩ";
         }
         if ($c4 == "Blue")
         {
-            $c4 = 3;
-            echo " x 1MΩ";
+            $c4 = 0.25;
+           echo "1MΩ";
         }
         if ($c4 == "Purple")
         {
-            $c4 = 4;
-            echo " x 10MΩ";
+            $c4 = 0.10;
+           echo "10MΩ";
         }
         if ($c4 == "Gray")
         {
-            $c4 = 5;
-            echo " x 100MΩ";
+            $c4 = 0.05;
+           echo "100MΩ";
         }
     
         if ($c4 == "Gold")
         {
-            $c4 = 6;
-            echo " x 0.1Ω";
+            $c4 = 5;
+           echo "0.1Ω";
         }
         if ($c4 == "Silver")
         {
-            $c4 = 7;
-            echo " x 0.01Ω";
+            $c4 = 10;
+           echo "0.01Ω";
         }
 
-
-
-
-
-
-
-
-
-
-
-
+        $resultM = ($c1.$c2)*$c3;
+       echo ($c1.$c2)*$c3 . "=" . $resultM;
         ?>
     </form>
 </body>
 </html>
-
