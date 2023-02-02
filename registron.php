@@ -1,9 +1,230 @@
 <?php
-$c1 = $_GET["couleurs1"];
-$c2 = $_GET["couleurs2"];
-$c3 = $_GET["couleurs3"];
-$c4 = $_GET["couleurs4"];
 
+if (empty ($c1)){
+    $c1 = 0;
+    
+   } 
+   if (empty ($c2)) { 
+    $c2 = 0;
+   }
+   if (empty ($c3)) { 
+    $c3 = 0;
+   }
+   if (empty ($c4)) { 
+    $c4 = 0;
+   }
+
+?>
+
+
+<?php
+
+    $c1=[
+
+        [
+            "colorName" => "noir",
+            "value" => 0,
+        ],
+        [
+            "colorName"=> "brun",
+            "value" => 1
+        ],
+            
+        [
+            "colorName"=> "rouge",
+            "value" => 2
+        ],
+
+        [
+
+            "colorName"=> "orange",
+            "value" => 3
+        ],
+        
+        [
+            "colorName" => "jaune",
+            "value" => 4
+        ],
+        
+        [
+
+            "colorName"=> "vert",
+            "value" => 5
+        ],
+
+        [
+
+            "colorName"=> "bleu",
+            "value" => 6
+        ],
+
+        [
+
+            "colorName"=> "violet",
+            "value" => 7
+        ],
+
+        [
+
+            "colorName"=> "gris",
+            "value" => 8
+        ],
+
+        [
+
+            "colorName"=> "blanc",
+            "value" => 9
+        ],
+      
+    ];
+
+    $c2=[
+        [
+            "colorName" => "noir",
+            "value" => 0
+        ],
+
+        [
+            "colorName"=> "brun",
+            "value" => 1
+        ],
+            
+        [
+            "colorName"=> "rouge",
+            "value" => 2
+        ],
+
+        [
+
+            "colorName"=> "orange",
+            "value" => 3
+        ],
+        
+        [
+            "colorName" => "jaune",
+            "value" => 4
+        ],
+        
+        [
+
+            "colorName"=> "vert",
+            "value" => 5
+        ],
+
+        [
+
+            "colorName"=> "bleu",
+            "value" => 6
+        ],
+
+        [
+
+            "colorName"=> "violet",
+            "value" => 7
+        ],
+
+        [
+
+            "colorName"=> "gris",
+            "value" => 8
+        ],
+
+        [
+
+            "colorName"=> "blanc",
+            "value" => 9
+        ],
+    ];
+
+    $c3=[
+        [
+            "colorName"=> "noir",
+            "value" => 1
+        ],
+
+        [
+            "colorName"=> "brun",
+            "value" => 10
+        ],
+        [
+            "colorName"=> "rouge",
+            "value" => 100
+        ],
+        [
+            "colorName"=> "orange",
+            "value" => 1
+        ],
+        [
+            "colorName"=> "jaune",
+            "value" => 10
+        ],
+        [
+            "colorName"=> "vert",
+            "value" => 100
+        ],
+        [
+            "colorName"=> "bleu",
+            "value" => 1
+        ],
+        [
+            "colorName"=> "violet",
+            "value" => 10
+        ],
+        [
+            "colorName"=> "gris",
+            "value" => 100
+        ],
+        [
+            "colorName"=> "blanc",
+            "value" => 1
+        ],
+        [
+            "colorName"=> "or",
+            "value" => 0.1
+        ],
+        [
+            "colorName"=> "argent",
+            "value" => 0.01
+        ],
+    
+    ];
+
+    $c4=[
+        [
+            "colorName"=> "brun",
+            "value" => 1
+        ],
+        [
+            "colorName"=> "rouge",
+            "value" => 2
+        ],
+        [
+            "colorName"=> "vert",
+            "value" => 0.5
+        ],
+        [
+            "colorName"=> "bleu",
+            "value" => 0.25
+        ],
+        [
+            "colorName"=> "violet",
+            "value" => 0.10
+        ],
+        [
+            "colorName"=> "gris",
+            "value" => 0.05
+        ],
+        [
+            "colorName"=> "or",
+            "value" => 5
+        ],
+        [
+            "colorName"=> "argent",
+            "value" => 10
+        ],
+  
+    ];
+  
 ?>
 
 <!DOCTYPE html>
@@ -20,69 +241,68 @@ $c4 = $_GET["couleurs4"];
     <form>
         <div class="containerResistance">
             <div class="resistance">
-                <span class="anneau1">1</span>
-                <span class="anneau2">2</span>
-                <span class="anneau3">3</span>
-                <span class="anneau4">4</span>
+                <span id="anneau1" class="anneau1"></span>
+                <span id="anneau2" class="anneau2"></span>
+                <span id="anneau3" class="anneau3"></span>
+                <span id="anneau4" class="anneau4"></span>
             </div>
             <div class="containerPanel">
-                <select name="couleurs1" id="selectionC1" class="selectionC1">
-                    <option value="">Anneaux 1</option>
-                    <option value="Noir">Noir 0</option>
-                    <option value="Brun">Brun 1</option>
-                    <option value="Red">Red 2</option>
-                    <option value="Orange">Orange 3</option>
-                    <option value="Yellow">Yellow 4</option>
-                    <option value="Green" >Green 5</option>
-                    <option value="Blue" >Blue 6</option>
-                    <option value="Purple">Purple 7</option>
-                    <option value="Gray">Gray 8</option>
-                    <option value="White">White 9</option>
+            
+                <select id="selectionC1" name="couleurs1"  class="selectionC1">
+                <option>Choisir </option>
+                    <?php foreach($c1 as $ourColors) : ?>
+                        <option value=" <?= $ourColors["value"]?>"> <?=$ourColors["colorName"]?></option>            
+                    <?php endforeach ?>
                 </select>
-                <select name="couleurs2" id="selectionC2" class="selectionC2">
-                    <option value="">Anneaux 2</option>
-                    <option value="Noir">Noir 0</option>
-                    <option value="Brun">Brun 1</option>
-                    <option value="Red">Red 2</option>
-                    <option value="Orange">Orange 3</option>
-                    <option value="Yellow">Yellow 4</option>
-                    <option value="Green">Green 5</option>
-                    <option value="Blue">Blue 6</option>
-                    <option value="Purple">Purple 7</option>
-                    <option value="Gray">Gray 8</option>
-                    <option value="White">White 9</option>
+                <select name="couleurs2"  class="selectionC1">
+                <option>Choisir  </option>
+                <?php foreach($c2 as $ourColors) :?>
+                        <option value="<?= $ourColors["value"]?>"<?=$ourColors["value"]?> > <?=$ourColors["colorName"]?></option>            
+                    <?php endforeach ?>
                 </select>
-                <select name="couleurs3" id="selectionC3" class="selectionC3">
-                    <option value="">Anneaux 3</option>
-                    <option value="Noir">Noir x1Ω</option>
-                    <option value="Brun">Brun x10Ω</option>
-                    <option value="Red">Red x100Ω</option>
-                    <option value="Orange">Orange 1kΩ</option>
-                    <option value="Yellow">Yellow 10kΩ</option>
-                    <option value="Green">Green x100kΩ</option>
-                    <option value="Blue">Blue x1MΩ</option>
-                    <option value="Purple">Purple x10MΩ</option>
-                    <option value="Gray">Gray x100MΩ</option>
-                    <option value="White">White x1GΩ</option>
-                    <option value="Gold">Gold x0.1Ω</option>
-                    <option value="Silver">Silver x0.01Ω</option>
+                <select name="couleurs3"  class="selectionC1">
+                <option>Choisir  </option>
+                <?php foreach($c3 as $ourColors) :?>
+                        <option value="<?= $ourColors["value"]?>"<?=$ourColors["value"]?> > <?=$ourColors["colorName"]?> </option>            
+                    <?php endforeach ?>
+                 
 
                 </select>
-                <select name="couleurs4" id="selectionC4" class="selectionC4">
-                    <option value="">Anneaux 4</option>
-                    <option value="Brun">Brun ±1%</option>
-                    <option value="Red">Red ±2%</option>
-                    <option value="Green">Green ±0.5%</option>
-                    <option value="Blue">Blue ±0.25%</option>
-                    <option value="Purple">Purple ±0.10%</option>
-                    <option value="Gray">Gray ±0.05%</option>
-                    <option value="Gold">White ±5%</option>
-                    <option value="Gray">White ±10%</option>
-                </select>
+                <select name="couleurs4"  class="selectionC1">
+                    <option>Choisir  </option>
+                <?php foreach($c4 as $ourColors) :?>
+                        <option value="<?= $ourColors["value"]?>" <?=$ourColors["value"]?> > <?=$ourColors["colorName"]?></option>            
+                    <?php endforeach ?>
             </div>         
         </div>
-        <input type="submit">
-        <?php 
+        <div class="submit">
+            <input type="submit">
+        </div>
+    <!-- // calcule de la multiplications -->
+    <div> 
+        <?php
+
+$opt1 =$_GET["couleurs1"];
+$opt2 =$_GET["couleurs2"];
+$opt3 =$_GET["couleurs3"];
+$opt4 =$_GET["couleurs4"];
+
+$resultM = ($opt1.$opt2)*$opt3;
+
+echo ($opt1.$opt2). " x " . $opt3 . " " . "=" . $resultM. "= " . $resultM . "Ω " . "±" . $opt4 . "%";
+?></div>
+</form>
+<script src="registron.js"></script>
+</body>
+</html>
+
+
+<!-- < ? php
+        $resultM = ($c1.$c2)*$c3;
+        echo ($c1.$c2). " x " . $c3 . " " . "=" . $resultM
+        . "= " . $resultM . "Ω " . "±" . $c4 . "%"
+?> -->
+ <!-- < ? php   Ancienne méthode
         // cercle 1 les valeurs attribuer
             if ($c1 == "Noir")
             {
@@ -94,7 +314,7 @@ $c4 = $_GET["couleurs4"];
                 $c1 = 1;
                 
             }
-            if ($c1 == "Red")
+            if ($c1 == "rouge")
             {
                 $c1 = 2;
                 
@@ -104,12 +324,12 @@ $c4 = $_GET["couleurs4"];
                 $c1 = 3;
                 
             }
-            if ($c1 == "Yellow")
+            if ($c1 == "jaune")
             {
                 $c1 = 4;
                 
             }
-            if ($c1 == "Green")
+            if ($c1 == "vert")
             {
                 $c1 = 5;
                 
@@ -129,7 +349,7 @@ $c4 = $_GET["couleurs4"];
                 $c1 = 8;
                 
             }
-            if ($c1 == "White")
+            if ($c1 == "blanc")
             {
                 $c1 = 9;
                 
@@ -145,7 +365,7 @@ $c4 = $_GET["couleurs4"];
                 $c2 = 1;
                 
             }
-            if ($c2 == "Red")
+            if ($c2 == "rouge")
             {
                 $c2 = 2;
                 
@@ -155,12 +375,12 @@ $c4 = $_GET["couleurs4"];
                 $c2 = 3;
                 
             }
-            if ($c2 == "Yellow")
+            if ($c2 == "jaune")
             {
                 $c2 = 4;
                 
             }
-            if ($c2 == "Green")
+            if ($c2 == "vert")
             {
                 $c2 = 5;
                 
@@ -179,7 +399,7 @@ $c4 = $_GET["couleurs4"];
                 $c2 = 8;
                 
             }
-            if ($c2 == "White")
+            if ($c2 == "blanc")
             {
                 $c2 = 9;
                 
@@ -193,7 +413,7 @@ $c4 = $_GET["couleurs4"];
             {
                 $c3 = 10;
             }
-            if ($c3 == "Red")
+            if ($c3 == "rouge")
             {
                 $c3 = 100;
             }
@@ -201,11 +421,11 @@ $c4 = $_GET["couleurs4"];
             {
                 $c3 = 1000;
             }
-            if ($c3 == "Yellow")
+            if ($c3 == "jaune")
             {
                 $c3 = 10000;
             }
-            if ($c3 == "Green")
+            if ($c3 == "vert")
             {
                 $c3 = 100000;
             }
@@ -221,7 +441,7 @@ $c4 = $_GET["couleurs4"];
             {
                 $c3 = 100000000;
             }
-            if ($c3 == "White")
+            if ($c3 == "blanc")
             {
                 $c3 = 1;
             }
@@ -242,12 +462,12 @@ $c4 = $_GET["couleurs4"];
             $c4 = 0;
         }
 
-        if ($c4 == "Red")
+        if ($c4 == "rouge")
         {
             $c4 = 1;
         }
     
-        if ($c4 == "Green")
+        if ($c4 == "vert")
         {
             $c4 = 2;
         }
