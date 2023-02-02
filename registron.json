@@ -1,11 +1,15 @@
 [
+    {
+        "colorName":"",
+        "value": "choisir"
+    },
 
     {
         "colorName":"black",
         "value": 0
     },
     {
-        "colorName": "brun",
+        "colorName": "Brown",
         "value": 1
     },
         
