@@ -51,4 +51,16 @@ h1 {
 }
 .resistance .anneau4 {
   background-color: black;
+}
+
+.inputettext {
+  text-align: center;
+}
+
+.selection {
+  width: 300px;
+}
+
+.submit {
+  display: block;
 }/*# sourceMappingURL=registron.css.map */
