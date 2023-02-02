@@ -1,12 +1,11 @@
 .resistance{
     display: grid;
- 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px;
     background-color: white;
     border: 3px black solid;
-
     min-width: 300px;
+    width: 40%;
     
 
     .anneau1{
@@ -29,4 +28,20 @@
     }
     
 
+}
+// select{
+//     margin-right: 20px;
+// }
+
+.inputettext{
+text-align: center;
+}
+
+.selection{
+    width: 300px;
+}
+
+.submit{
+    
+   
 }
