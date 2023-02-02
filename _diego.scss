@@ -1,7 +1,14 @@
 body
 {
     background-image: url(images//background.jpg);
+    // background-position: 99% 50%;
     background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 h1
 {
@@ -17,11 +24,15 @@ h1
    
     .containerPanel
     {
-        display: flex;
-        flex-flow: row;
         width: 40%;
-        justify-content: space-between;
-        .selectionC1,.selectionC2,.selectionC3,.selectionC4
+        @media screen and (max-width:750px)
+        {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 10px;
+            
+        }
+        .selectionC1
         {
             background-color: black;
             border: 2px black solid;
@@ -29,6 +40,11 @@ h1
             color: white;
             height: 40px;
             width: 23%;
+            @media screen and (max-width:750px)
+        {
+            width: 100%;
+            
+        }
         }
     }
 
