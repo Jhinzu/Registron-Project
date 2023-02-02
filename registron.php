@@ -13,7 +13,6 @@ if (empty ($c1)){
    if (empty ($c4)) { 
     $c4 = 0;
    }
-
 ?>
 
 
@@ -275,10 +274,9 @@ if (empty ($c1)){
                     <?php endforeach ?>
             </div>         
         </div>
-        
-    <div class="submit">
-        <input type="submit"> 
-    </div>
+        <div class="submit">
+            <input type="submit">
+        </div>
     <!-- // calcule de la multiplications -->
     <div> 
         <?php
@@ -296,4 +294,3 @@ echo ($opt1.$opt2). " x " . $opt3 . " " . "=" . $resultM. "= " . $resultM . "Ω 
 <script src="registron.js"></script>
 </body>
 </html>
-

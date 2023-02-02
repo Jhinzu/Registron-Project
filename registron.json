@@ -1,0 +1,52 @@
+[
+
+    {
+        "colorName":"black",
+        "value": 0
+    },
+    {
+        "colorName": "brun",
+        "value": 1
+    },
+        
+    {
+        "colorName": "red",
+        "value": 2
+    },
+
+    {
+        "colorName": "orange",
+        "value": 3
+    },
+    
+    {
+        "colorName": "yellow",
+        "value": 4
+    },
+    
+    {
+        "colorName": "green",
+        "value": 5
+    },
+
+    {
+        "colorName": "blue",
+        "value": 6
+    },
+
+    {
+        "colorName": "purple",
+        "value": 7
+    },
+
+    {
+        "colorName": "gray",
+        "value": 8
+    },
+
+    {
+        "colorName": "white",
+        "value": 9
+    }
+  
+]
