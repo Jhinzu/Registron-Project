@@ -1,6 +1,12 @@
 body {
   background-image: url(images//background.jpg);
-  background-position: 99% 50%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1080px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 h1 {
@@ -14,18 +20,27 @@ h1 {
   gap: 20px;
 }
 .containerResistance .containerPanel {
-  display: flex;
-  flex-flow: row;
   width: 40%;
-  justify-content: space-between;
 }
-.containerResistance .containerPanel .selectionC1, .containerResistance .containerPanel .selectionC2, .containerResistance .containerPanel .selectionC3, .containerResistance .containerPanel .selectionC4 {
+@media screen and (max-width: 750px) {
+  .containerResistance .containerPanel {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+}
+.containerResistance .containerPanel .selectionC1 {
   background-color: black;
   border: 2px black solid;
   border-radius: 7px;
   color: white;
   height: 40px;
   width: 23%;
+}
+@media screen and (max-width: 750px) {
+  .containerResistance .containerPanel .selectionC1 {
+    width: 100%;
+  }
 }
 
 .resistance {
