@@ -277,7 +277,6 @@ $c4 = $_GET["couleurs4"];
         echo ($c1.$c2). " x " . $c3 . " " . "=" . $resultM
         . "= " . $resultM . "Ω " . "±" . $c4 . "%"
         //calcul du pourcentage
-
         ?>
     </form>
 </body>
